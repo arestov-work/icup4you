@@ -1,0 +1,8 @@
+.button-open-menu {
+  display: none;
+  cursor: pointer;
+
+  @media (max-width: 1024px) {
+    display: block;
+  }
+}

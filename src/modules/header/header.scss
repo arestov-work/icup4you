@@ -1,18 +1,31 @@
 .header {
-  height: 100vh;
   color: white;
-  background-color: black;
+  background-color: $black;
   padding-top: 24px;
 
   &__nav {
     list-style-type: none;
     display: flex;
+    align-items: center;
     justify-content: space-between;
   }
 
   &__list {
     display: flex;
     column-gap: 40px;
+    cursor: pointer;
+    @include body;
+
+    @media (width < $media-1280) {
+      column-gap: 24px;
+    }
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &__logo {
     cursor: pointer;
   }
 }
