@@ -2,4 +2,8 @@
   margin: 0 auto;
   padding: 0 15px;
   max-width: 1320px;
+
+  @media (width < $media-1280) {
+    max-width: 1220px;
+  }
 }

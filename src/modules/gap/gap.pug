@@ -1,0 +1,9 @@
+mixin gap(props)
+  - const { size } = props
+
+  -
+    const classList = {
+      'gap--160': size === 160
+    }
+
+  .gap(class=classList)

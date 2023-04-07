@@ -1,0 +1,21 @@
+.btn-buy-bowl {
+  width: 220px;
+  height: 220px;
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  @include body-bold;
+  color: $black;
+  transition: 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $blue-light;
+  }
+
+  &:active {
+    background-color: $blue;
+  }
+}

@@ -1,0 +1,7 @@
+include /modules/main-preview/main-preview
+include /modules/main-recommendations/main-recommendations
+
+mixin main()
+  main.main
+    +main-preview()
+    +main-recommendations()

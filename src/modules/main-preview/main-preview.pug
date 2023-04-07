@@ -1,0 +1,14 @@
+include /modules/gap/gap
+include /modules/text/text
+include /modules/btn-buy-bowl/btn-buy-bowl
+
+mixin main-preview()
+  section.main-preview
+    +gap({ size: 160 })
+    +container()
+      .main-preview__wrapper
+        h1.main-preview__title менструальные<br> чаши <span>iCUP4YOU<span>
+        img(src="/assets/images/preview-img.png" width="927" height="600").main-preview__img
+        +text().main-preview__text Безопасная и комфортная альтернатива одноразовым средствам гигиены
+        +btn-buy-bowl()
+    +gap({ size: 160 })

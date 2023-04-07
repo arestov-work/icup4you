@@ -1,0 +1,20 @@
+.main-recommendations {
+
+  &__head-wrapper {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    align-items: end;
+    margin-bottom: 56px;
+  }
+
+  &__text {
+    color: $black;
+    padding-bottom: 15px;
+  }
+
+  &__main-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+}

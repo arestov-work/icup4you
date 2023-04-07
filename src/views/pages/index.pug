@@ -1,7 +1,7 @@
 extends /views/layouts/default
 
-include /modules/test/test
-include  /modules/header/header
+include /modules/header/header
+include /modules/main/main
 
 block variables
     - const title = 'Главная страница'
@@ -9,3 +9,4 @@ block variables
 
 block content
   +header()
+  +main()

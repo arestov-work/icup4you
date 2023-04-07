@@ -1,0 +1,16 @@
+include /modules/gap/gap
+include /modules/container/container
+include /modules/block-header/block-header
+include /modules/text/text
+include /modules/recommendations-block/recommendations-block
+
+mixin main-recommendations
+  section.main-recommendations
+    +gap({ size: 160 })
+    +container()
+      .main-recommendations__head-wrapper
+        +block-header() Рекомендовано гинекологами
+        +text().main-recommendations__text 90% женщин, попробовавших чашу, готовы использовать ее в дальнейшем
+      .main-recommendations__main-wrapper
+        +recommendations-block()
+
