@@ -1,0 +1,119 @@
+@mixin ff--FoglihtenNo06 {
+  font-family: 'FoglihtenNo06', sans-serif;
+}
+
+@mixin ff--Bellota {
+  font-family: 'Bellota', sans-serif;
+}
+
+@mixin ff--Manrope {
+  font-family: 'Manrope', sans-serif;
+}
+
+@mixin h1 {
+  @include ff--FoglihtenNo06;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 120%;
+}
+
+@mixin h2 {
+  @include ff--FoglihtenNo06;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 120%;
+}
+
+@mixin h3 {
+  @include ff--FoglihtenNo06;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 120%;
+}
+
+@mixin h4 {
+  @include ff--FoglihtenNo06;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 120%;
+}
+
+@mixin h5 {
+  @include ff--FoglihtenNo06;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+@mixin h6 {
+  @include ff--FoglihtenNo06;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+}
+
+@mixin body-big-big {
+  @include ff--Bellota;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 140%;
+}
+
+@mixin body-big {
+  @include ff--Bellota;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+}
+
+@mixin body {
+  @include ff--Bellota;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+@mixin body-bold {
+  @include ff--Bellota;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+@mixin body-small-bold {
+  @include ff--Bellota;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+@mixin body-small {
+  @include ff--Bellota;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+}

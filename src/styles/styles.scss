@@ -1,0 +1,22 @@
+//// Подключение библиотек
+@import 'node_modules/@verno.digital/newest-css-reset/src/reset';
+//// ---
+
+//// Подключение рабочих файлов
+@import 'utils/variables';
+@import 'mixins/mixins';
+@import 'utils/fonts';
+//// ---
+//
+//// Подключение базовых стилей
+@import 'base';
+//// ---
+//
+//// Подключение модулей
+@import '../modules/*/*';
+//// ---
+//
+//// Подключение отдельных стилей
+@import 'common/*';
+//// ---
+

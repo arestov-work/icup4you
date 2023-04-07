@@ -1,0 +1,65 @@
+@import 'typography';
+@import 'fluid-type';
+
+@mixin container {
+  width: 100%;
+  max-width: $container-width + $container-gap + $container-gap;
+  padding-right: $container-gap;
+  padding-left: $container-gap;
+  margin: 0 auto;
+}
+
+@mixin pseudo {
+  display: block;
+  content: '';
+}
+
+@mixin position-fill {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin reset-link {
+  font-family: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+@mixin reset-input {
+  font-family: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  outline: none;
+  appearance: none;
+}
+
+@mixin reset-button {
+  width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  font: inherit;
+  line-height: normal;
+  color: inherit;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+@mixin crop-line {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin crop-height ($line) {
+  -webkit-line-clamp: $line;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

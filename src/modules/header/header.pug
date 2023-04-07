@@ -1,0 +1,26 @@
+include /modules/container/container
+
+mixin header()
+  header.header
+    +container()
+      nav.header__nav
+        ul.header__list
+          li.header__link
+            a(href="#") О чашах
+          li.header__link
+            a(href="#") Выбор размера
+          li.header__link
+            a(href="#") Как пользоваться
+
+        a(href="#").header__logo
+          img(src="/assets/images/logo.svg")
+
+        ul.header__list
+          li.header__link
+            a(href="#") Отзывы
+          li.header__link
+            a(href="#") Часто задаваемые вопросы
+          li.header__link
+            a(href="#") Купить
+
+
