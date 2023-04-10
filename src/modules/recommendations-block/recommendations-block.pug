@@ -1,3 +1,5 @@
+include /modules/size-selection-checkbox/size-selection-checkbox
+
 mixin recommendations-block
   .recommendations-block
     h4.recommendations-block__title 100% безопасно
@@ -26,3 +28,5 @@ mixin recommendations-block
 
       .buy-bowl__purchase
         h4.recommendations-block__title.recommendations-block__title--size купить чашу
+        +size-selection-checkbox()
+        a(href="#").recommendations-block__link Инструкция по выбору размера

@@ -31,4 +31,18 @@
   &__title--size {
     margin-bottom: 32px;
   }
+
+  &__link {
+    @include body-small;
+    color: $gray-dark;
+    border-bottom: 1px solid $gray-dark;
+    display: inline-block;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-bottom: 16px;
+
+    &:hover {
+      border-bottom: 1px solid $white;
+    }
+  }
 }
