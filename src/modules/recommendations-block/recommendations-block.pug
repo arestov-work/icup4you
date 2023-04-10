@@ -1,4 +1,5 @@
 include /modules/size-selection-checkbox/size-selection-checkbox
+include /modules/btn-buy/btn-buy
 
 mixin recommendations-block
   .recommendations-block
@@ -30,3 +31,5 @@ mixin recommendations-block
         h4.recommendations-block__title.recommendations-block__title--size купить чашу
         +size-selection-checkbox()
         a(href="#").recommendations-block__link Инструкция по выбору размера
+        a(href="#").recommendations-block__price 590 ₽
+        +body-bold() Купить

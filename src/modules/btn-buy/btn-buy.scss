@@ -1,0 +1,5 @@
+.btn-buy {
+  background-color: $black;
+  color: $white;
+  @include body-bold;
+}

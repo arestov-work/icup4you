@@ -26,6 +26,8 @@
 
   .buy-bowl__purchase {
     padding: 24px 56px;
+    display: flex;
+    flex-direction: column;
   }
 
   &__title--size {
@@ -36,13 +38,20 @@
     @include body-small;
     color: $gray-dark;
     border-bottom: 1px solid $gray-dark;
-    display: inline-block;
     transition: 0.3s;
     cursor: pointer;
     margin-bottom: 16px;
+    max-width: 212px;
 
     &:hover {
       border-bottom: 1px solid $white;
     }
+  }
+
+  &__price {
+    color: $blue;
+    @include body-big-big;
+    cursor: pointer;
+    margin-bottom: 32px;
   }
 }
