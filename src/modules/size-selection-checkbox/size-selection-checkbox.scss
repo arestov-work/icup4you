@@ -28,23 +28,27 @@
     transition: 0.3s;
   }
 
-  &__btn--m {
-    &:hover {
-      background-color: $blue-light-2;
-    }
+  &__btn {
+    &--m {
+      &:hover {
+        background-color: $blue-light-2;
+      }
 
-    &:active {
-      background-color: $blue-light;
+      &:active {
+        background-color: $blue-light;
+      }
     }
   }
 
-  &__btn--l {
-    &:hover {
-      background-color: $blue-light-2;
-    }
+  &__btn {
+    &--l {
+      &:hover {
+        background-color: $blue-light-2;
+      }
 
-    &:active {
-      background-color: $blue-light;
+      &:active {
+        background-color: $blue-light;
+      }
     }
   }
 }

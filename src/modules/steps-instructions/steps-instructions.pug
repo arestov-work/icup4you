@@ -1,3 +1,10 @@
-mixin steps-instructions
-  .steps-instructions&attributes(attributes)
+mixin steps-instructions(props)
+  - const { theme } = props
+
+  -
+    const classList = {
+      'steps-instructions--clear': theme === 'clear'
+    }
+
+  .steps-instructions(class=classList)&attributes(attributes)
     block

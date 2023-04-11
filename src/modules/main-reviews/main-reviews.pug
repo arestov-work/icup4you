@@ -1,0 +1,45 @@
+include /modules/container/container
+include /modules/block-header/block-header
+include /modules/reviews/reviews
+include /modules/btn-reviews-back/btn-reviews-back
+include /modules/btn-reviews-next/btn-reviews-next
+include /modules/gap/gap
+
+mixin main-reviews
+  section.main-reviews
+    +container()
+      +block-header().main-reviews__add-parameters Отзывы
+
+      .main-reviews__reviews-wrapper
+        +reviews()
+          .main-reviews__box
+            h5.main-reviews__name  Юлия к.
+            p.main-reviews__text.
+              Мне чаша идеально подошла. Проблем в носке не возникло, при введении сразу раскрылась,
+              все с первой попытки!!!(видимо научилась благодаря вашим советам, зная теорию, практика далась легко ).
+              Возникли небольшие проблемы с извлечением, но это из-за недостатка опыта. К концу цикла доставала без проблем.
+          img(src="/assets/images/star-3.svg")
+
+        +reviews()
+          .main-reviews__box
+            h5.main-reviews__name  Светлана в.
+            p.main-reviews__text.
+              Отзывчивый персонал, который регулярно отвечает в чатах.
+              Терпеливо помогает при любой проблеме. Всегда помогут советом и подскажут.
+              Также со многими проблемами помогает справляться чат в телеграм, где много единомышленников и в
+              целом очень приятных девушек, которые помогут советом в любой теме.
+          img(src="/assets/images/star-5.svg")
+
+        +reviews()
+          .main-reviews__box
+            h5.main-reviews__name  Ирина о.
+            p.main-reviews__text.
+              Само изобретение, конечно, феноменальное.
+              Вообще забываешь обо всех ограничениях и дискомфорте )).
+              Хочешь - в бассейн, хочешь - на море, на рок-концерт. Да куда угодно!
+          img(src="/assets/images/star-5.svg")
+
+      .main-reviews__btn-wrapper
+        +btn-reviews-back()
+        +btn-reviews-next()
+    +gap({ size: 180 })
