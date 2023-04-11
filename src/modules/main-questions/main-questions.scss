@@ -11,9 +11,19 @@
     color: $white;
   }
 
-  &__box {
+  &__box-questions {
     display: flex;
     flex-direction: column;
     row-gap: 24px;
+  }
+
+  &__questions-text {
+    @include body;
+  }
+
+  &__questions-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
   }
 }

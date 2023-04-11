@@ -1,7 +1,7 @@
 .question-answer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 
   color: $white;
   @include h5;

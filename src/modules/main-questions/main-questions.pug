@@ -8,10 +8,17 @@ mixin main-questions
       .main-questions__wrapper
         +block-header().main-questions__add-parameters часто задаваемые вопросы
 
-        .main-questions__box
+        .main-questions__box-questions
           +question-answer() как долго можно носить чашу ?
 
-          +question-answer() Можно ли заниматься спортом с чашей ?
+          +question-answer()
+            .main-questions__questions-content
+              .main-questions__questions-title Можно ли заниматься спортом с чашей ?
+              .main-questions__questions-text.
+                Менструальные чаши замечательно подходят для занятий спортом.
+                Вы забудете о том, что у вас менструация, не будете ощущать чашу и она будет надёжно собирать
+                выделения во время любых активных занятий - танцы, плавание, бег, йога и любые другие.
+
 
           +question-answer() Можно ли пользоваться девственницам?
 
