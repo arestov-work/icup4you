@@ -1,0 +1,15 @@
+include /modules/container/container
+include /modules/gap/gap
+include /modules/steps-instructions/steps-instructions
+
+mixin call-to-action
+  section.call-to-action
+    +container()
+      .call-to-action__wrapper
+        form.call-to-action__form
+          h3.call-to-action__title Остались вопросы?
+          p.call-to-action__text Заполните форму, менеджер позвонит вам и ответит на ваши вопросы.
+
+        +steps-instructions({theme: 'clear'})
+          img(src="/assets/images/woman-with-cup.png" alt="")
+    +gap({ size: 160 })

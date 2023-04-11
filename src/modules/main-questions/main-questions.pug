@@ -1,6 +1,7 @@
 include /modules/container/container
 include /modules/block-header/block-header
 include /modules/question-answer/question-answer
+include /modules/gap/gap
 
 mixin main-questions
   section.main-questions
@@ -29,3 +30,4 @@ mixin main-questions
           +question-answer() Как очищать чашу ?
 
           +question-answer() Как обрезать хвостик ?
+    +gap({ size: 160 })
