@@ -1,0 +1,28 @@
+.main-manual {
+  background-color: $black;
+
+  &__add-parameters {
+    color: $white;
+    margin-bottom: 56px;
+  }
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  &__step {
+    color: $blue;
+    @include h1;
+  }
+
+  &__action {
+    color: $white;
+    @include h4;
+  }
+
+  &__img {
+    border: 0 !important;
+  }
+}
+

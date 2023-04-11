@@ -1,0 +1,33 @@
+include /modules/container/container
+include /modules/block-header/block-header
+include /modules/steps-instructions/steps-instructions
+include /modules/gap/gap
+
+mixin main-manual
+  section.main-manual
+    +container()
+      +block-header().main-manual__add-parameters Пользоваться чашей<br> очень просто
+
+      .main-manual__wrapper
+        +steps-instructions()
+          p.main-manual__step 01
+          p.main-manual__action Продезинфицируйте
+
+        +steps-instructions()
+          p.main-manual__step 02
+          p.main-manual__action Введите чашу
+
+        +steps-instructions().main-manual__img
+          img(src="/assets/images/bowl-and-lilac.png" alt="")
+
+        +steps-instructions().main-manual__img
+          img(src="/assets/images/woman.png" alt="")
+
+        +steps-instructions()
+          p.main-manual__step 03
+          p.main-manual__action Извлеките
+
+        +steps-instructions()
+          p.main-manual__step 04
+          p.main-manual__action Промойте чашу
+    +gap({ size: 160 })

@@ -1,7 +1,11 @@
 include /modules/main-preview/main-preview
 include /modules/main-recommendations/main-recommendations
+include /modules/main-size/main-size
+include /modules/main-manual/main-manual
 
 mixin main()
   main.main
     +main-preview()
     +main-recommendations()
+    +main-size()
+    +main-manual()

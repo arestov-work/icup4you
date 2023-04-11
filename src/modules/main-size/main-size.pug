@@ -1,0 +1,13 @@
+include /modules/container/container
+include /modules/gap/gap
+include /modules/block-header/block-header
+include /modules/size-cards/size-cards
+
+mixin main-size
+  section.main-size
+    +gap({ size: 120 })
+    +container()
+      +block-header().main-size--add-parameters Как выбрать размер ?
+      +size-cards()
+    +gap({ size: 160 })
+

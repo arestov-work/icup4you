@@ -1,0 +1,13 @@
+.steps-instructions {
+  width: 403px;
+  height: 403px;
+  border-radius: 50%;
+  border: 2px solid $white;
+  color: $white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 16px;
+}

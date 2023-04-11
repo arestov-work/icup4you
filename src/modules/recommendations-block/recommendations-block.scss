@@ -51,7 +51,6 @@
   &__price {
     color: $blue;
     @include body-big-big;
-    cursor: pointer;
     margin-bottom: 32px;
   }
 }

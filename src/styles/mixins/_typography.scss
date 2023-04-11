@@ -73,6 +73,15 @@
   line-height: 140%;
 }
 
+@mixin body-big-bold {
+  @include ff--Bellota;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+}
+
 @mixin body-big {
   @include ff--Bellota;
 
