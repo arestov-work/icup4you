@@ -1,0 +1,12 @@
+mixin form
+  form.form
+    h3.form__title Остались вопросы?
+    p.form__text Заполните форму, менеджер позвонит вам и ответит на ваши вопросы.
+
+    .form__box
+      input(type="text" name="name" placeholder="Имя").form__name
+
+      input(type="tel" name="tel" placeholder="Телефон").form__tel
+
+      input(type="checkbox" id="check")
+      label(for="check") Нажимая на кнопку, вы даете своё согласие на обработку Персональных данных
