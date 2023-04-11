@@ -1,0 +1,11 @@
+.question-answer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: $white;
+  @include h5;
+
+  border-bottom: 1px solid $gray;
+  padding-bottom: 16px;
+}

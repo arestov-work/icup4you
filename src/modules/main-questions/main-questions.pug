@@ -1,6 +1,24 @@
 include /modules/container/container
+include /modules/block-header/block-header
+include /modules/question-answer/question-answer
 
 mixin main-questions
   section.main-questions
     +container()
+      .main-questions__wrapper
+        +block-header().main-questions__add-parameters часто задаваемые вопросы
 
+        .main-questions__box
+          +question-answer() как долго можно носить чашу ?
+
+          +question-answer() Можно ли заниматься спортом с чашей ?
+
+          +question-answer() Можно ли пользоваться девственницам?
+
+          +question-answer() Чаша протекает. Что делать ?
+
+          +question-answer() Как хранить чашу ?
+
+          +question-answer() Как очищать чашу ?
+
+          +question-answer() Как обрезать хвостик ?
